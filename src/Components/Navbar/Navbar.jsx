@@ -67,7 +67,8 @@ export const Navbarjsx = () => {
                             <Nav.Link
                                 as={Link}
                                 to="/"
-                                onClick={(() => setexpand(false),() => setpathstate("#home"))}
+                                onClick={(() => setexpand(false)// eslint-disable-next-line , 
+                                    ,() => setpathstate("#home"))}
                             >
                                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
                             </Nav.Link>
@@ -76,7 +77,8 @@ export const Navbarjsx = () => {
                             <Nav.Link
                                 as={Link}
                                 to="/about"
-                                onClick={(() => setexpand(false), () => setpathstate("#about"))}
+                                onClick={(() => setexpand(false)// eslint-disable-next-line , 
+                                    , () => setpathstate("#about"))}
                             >
                                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
                             </Nav.Link>
@@ -86,7 +88,8 @@ export const Navbarjsx = () => {
                                 as={Link}
                                 to="/projects"
                                 onClick={
-                                    (() => setexpand(false), () => setpathstate("#projects"))
+                                    (() => setexpand(false)// eslint-disable-next-line , 
+                                    ,() => setpathstate("#projects"))
                                 }
                             >
                                 <AiOutlineFundProjectionScreen
@@ -100,7 +103,10 @@ export const Navbarjsx = () => {
                                 as={Link}
                                 to="/contact"
                                 onClick={
-                                    (() => setexpand(false), () => setpathstate("#contact"))
+                                    (() => setexpand(false)// eslint-disable-next-line , 
+                                    , () => {
+                                        return setpathstate("#contact");
+                                    })
                                 }
                             >
                                 <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
@@ -111,7 +117,8 @@ export const Navbarjsx = () => {
                                 as={Link}
                                 to="/resume"
                                 onClick={
-                                    (() => setexpand(false), () => setpathstate("#resume"))
+                                    (() => setexpand(false)// eslint-disable-next-line ,
+                                     , () => setpathstate("#resume"))
                                 }
                             >
                                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
