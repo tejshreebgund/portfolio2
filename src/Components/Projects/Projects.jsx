@@ -12,6 +12,7 @@ import { DiReact, DiJavascript, DiGithubBadge, DiHtml5,DiMongodb } from "react-i
 import { FaLink, FaCss3 } from "react-icons/fa";
 export const Projects = () => {
     return (
+        <Container className="body">
         <Container fluid className="project-section">
             <Particle />
             <Container>
@@ -102,6 +103,7 @@ export const Projects = () => {
                                     
                 </Row>
             </Container>
+        </Container>
         </Container>
     );
 };
